@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const port = process.env.PORT || 3000
 
 app.use(express.static(__dirname))
 
@@ -52,7 +53,8 @@ app.get('/actividades', (req, res) => {
     res.sendFile(path.join(__dirname, 'actividades.html'))
 } )
 
-app.listen(3000, '192.168.1.203', () => {
-    console.log('Server is running on http://192.168.1.203:3000');
+app.listen(port, () => {
+    console.log('Server is running pal);
 
 })
+
