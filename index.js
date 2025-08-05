@@ -54,4 +54,5 @@ app.get('/actividades', (req, res) => {
 
 app.listen(3000, '192.168.1.203', () => {
     console.log('Server is running on http://192.168.1.203:3000');
+
 })
