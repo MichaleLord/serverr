@@ -54,7 +54,8 @@ app.get('/actividades', (req, res) => {
 } )
 
 app.listen(port, () => {
-    console.log('Server is running pal);
+    console.log('Server is running pal');
 
 })
+
 
