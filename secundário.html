@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensino Secundário</title>
+    <link rel="stylesheet" href="secundário.css">
+    <link rel="icon" href="assets/logo.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="assets/logonobg.png">
+            <h1 style="color: black;text-align: center">Colégio + Saber</h1>
+            <div class="bar">
+                <div class="search">
+                    <input type="name" placeholder="Pesquisar...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <ul>
+                    <li><a href="/">Colégio</a></li>
+                    <li>
+                        <a href="#">Sobre <span class="icon1" style="font-size: 15px;">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="/inscricao">inscrição</a></li>
+                            <li><a href="/valores">valores</a></li>
+                            <li><a href="/taxas">taxas</a></li>
+                            <li><a href="/equipe">equipe</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="/ensino">Prospota Pedagogia <span style="font-size: 15px;">▼</span></a>
+                        <ul class="dropdown">
+
+                            <li class="li">
+                                <a href="/primario">Ensino Primário <div class="icon2" style="font-size: 15px;">▼</div></a>
+                                <ul class="drop1">
+                                    <li><a>1º Ciclo</a></li>
+                                    <li><a>2° Ciclo</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="li">
+                                <a href="/secundario">Ensino Secundário <div class="icon2" style="font-size: 15px;">▼</div></a>
+                                <ul class="drop2">
+                                    <li><a>1º Ciclo</a></li>
+                                    <li><a>2° Ciclo</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    
+                    <li><a href="/contacto">Contato </a></li>
+                    
+                    <li>
+                        <a href="#">Comunidade Escolar <span style="font-size: 15px;">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="/uniforme">Uniforme escolar</a></li>
+                            <li><a href="/material">Material Escolar</a></li>
+                            <li><a href="/actividades">Fichas de atividades</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu">
+                <button onclick="menu()" id="menuButton" style="color: black"><i class="fa-solid fa-bars"></i></button>
+                <div class="navContainer">
+                    <button onclick="menuclose()"><i class="fa-solid fa-xmark"></i></button>
+                    <div style="display: flex; align-items:center;justify-content: center">
+                        <ul id="navMenu">
+                            <img src="assets/logonobg.png">
+                            <li id="li1"><a href="/">Colégio</a></li>
+
+                            <li>
+                                <a href="#">Sobre <span class="icon1" style="font-size: 15px;">▼</span></a>
+                                <ul class="dropmenu">
+                                    <li class="item"><a href="/inscricao">inscrição</a></li>
+                                    <li class="item"><a href="/valores">valores</a></li>
+                                    <li class="item"><a href="/taxas">taxas</a></li>
+                                    <li class="item"><a href="/equipe">equipe</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="/ensino">Prospota Pedagogia</a>
+                                <button style="font-size: 15px;display: inline;transition: transform 0.3s ease-in-out" class="button" onclick="show()">▼</button>
+                                <ul class="dropmenus" style="display: none;">
+
+                                    <li class="lo">
+                                        <a href="/primario">Ensino Primário <div class="icon2" style="font-size: 15px;">▼</div></a>
+                                        <ul class="drop3">
+                                            <li><a>1° ciclo</a></li>
+                                            <li><a>2° ciclo</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="lo">
+                                        <a href="/secundario">Ensino Secundário <div class="icon2" style="font-size: 15px;">▼</div></a>
+                                        <ul class="drop3">
+                                            <li><a>1° ciclo</a></li>
+                                            <li><a>2° ciclo</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="/contacto">Contacto</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Comunidade Escolar <span style="font-size: 15px;">▼</span></a>
+                                <ul class="dropmenu">
+                                    <li><a href="/uniforme">Uniforme escolar</a></li>
+                                    <li><a href="/material">Material Escolar</a></li>
+                                    <li><a href="/actividades">Fichas de atividades</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div style="background-color: #e6e7eb;padding: 50px 0;">
+            <h1 style="color: #989797;margin-left: 30px">Proposta pedagógica</h1>
+        </div>
+
+        <nav class="bread">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/ensino">Proposta Pedagógica</a></li>
+                <li><a href="#" class="special">Ensino Secund&aacute;rio</a></li>
+            </ul>
+        </nav>
+
+        <div class="img-container">
+            <h1>Secundário</h1>
+            <img src="assets/gray.png">
+        </div>
+
+        <div class="main">
+            <div class="typewriter">
+                <p class="line1">"Educar para</p>
+                <p class="line2">transformar o futuro."</p>
+                <p class="line3">transformar</p>
+                <p class="line4">o futuro."</p>
+            </div>
+
+            <h1 style="background-color: #660033;color: white;text-align: center">Porque nos escolher?</h1>
+
+            <blockquote style="text-align: center;margin: 0 auto;font-size: 25px">
+                <b>Escolher uma boa escola secundária é investir no seu futuro</b>.
+                Ela oferece bases sólidas para o sucesso académico e 
+                profissional.
+                Com professores dedicados e um ambiente motivador, 
+                o aluno desenvolve autonomia e pensamento crítico.
+                Além disso, há oportunidades para descobrir 
+                talentos, participar em projetos e crescer como pessoa.
+                É o lugar onde sonhos começam a tomar forma.
+
+                Durante esta fase, os jovens não apenas aprendem conteúdos, 
+                mas também constroem valores e relações duradouras.
+                A escola secundária ajuda a formar cidadãos conscientes, 
+                preparados para os desafios do mundo moderno.
+                Com atividades extracurriculares, laboratórios, 
+                clubes e apoio pedagógico, cada aluno pode explorar o seu potencial.
+                É um espaço onde a curiosidade é valorizada e o 
+                esforço é reconhecido.
+                Acima de tudo, é onde cada aluno pode descobrir 
+                quem é — e quem deseja tornar-se.
+
+                Se quiser posso adaptar para um estilo mais formal, 
+                mais jovem, ou com foco em tecnologia, ciências, artes etc.
+            </blockquote>
+
+            <div class="card-container">
+
+                <h1 style="color: white;margin-top: 50px;">__________ Jornada __________</h1>
+
+                <div class="card" style="margin-bottom: 200px;margin-top: 50px;">
+                    <div class="card1">
+                        <img src="https://placehold.co/400x200" style="width: 100%;height: 100%;object-fit: cover">
+                    </div>
+                    <div class="card2">
+                        <h1>Excelência Curriculas</h1>
+                        <blockquote>
+                            Nosso corpo docente dedicado garante uma 
+                            educação de classe mundial
+                            que vai além dos livros didáticos.
+
+                            A fusão do currículo nacional com o currículo 
+                            internacionalmente aclamado de Cambridge proporciona 
+                            aos alunos uma base completa e reconhecida 
+                            mundialmente.
+
+                            Seja buscando IGCSE ou A Levels, 
+                            nossos alunos embarcam em uma jornada 
+                            que abre portas para universidades de 
+                            primeira linha em todo o mundo, 
+                            colocando-os em uma trajetória 
+                            de sucesso
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card1">
+                        <img src="https://placehold.co/400x200" style="width: 100%;height: 100%;object-fit: cover">
+                    </div>
+                    <div class="card3">
+                        <h1>A sua jornada começa aqui</h1>
+                        <blockquote>
+                            Você está pronto para desbloquear todo o seu 
+                            potencial? Junte-se à Seção Secundária do 
+                            Colégio + Saber, onde cada aluno tem o poder de 
+                            atingir novos patamares, equipado com conhecimentos, 
+                            habilidades e paixão pela aprendizagem 
+                            ao longo da vida.
+
+                            Além dos acadêmicos, a Willow International School 
+                            oferece uma infinidade de benefícios. 
+                            Envolva-se em oportunidades de liderança, 
+                            iniciativas de serviço comunitário e 
+                            uma variedade vibrante de clubes e eventos, 
+                            promovendo uma experiência educacional completa.
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="whatsapp">
+            <a href="https://chat.whatsapp.com/IXpklUtFEQ5GrEIWsnBxif" target="_blank">
+                <button>
+                    <img src="assets/whatsapp.png">
+                </button>
+            </a>
+            <p>Whatsapp</p>
+        </div>
+
+        <div class="bottom">
+            <div class="top-container">
+                <img src="assets/csaber.png" width="300px">
+            </div>
+            <p style="color: white">______________________________________________________________________________________</p>
+            <div class="bcontainer">
+                <div class="text">
+                    <h3>Sobre</h3>
+                    <p>O Colégio + saber é <br>
+                        uma escola localizada no <br>
+                        bairo do zimpeto onde nós <br>
+                        temos como principal <br>
+                        <br>
+                        objectivo o desenvolvimento <br>
+                        e aprendizado do seu filho <br>
+                        para que possam se <br>
+                        formar em adultos capacitados
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>Matrículas</h3>
+                    <p>Matriculas abertas a partir de:<br>
+                        <br>
+                        <b>20 de novembro</b> <br>
+                        <br>
+                        até<br>
+                        <br>
+                        <b>30 de janeiro</b>
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>Contacte-nos</h3>
+                    <div style="margin-bottom: 10px">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p style="display: inline;">Nosso endereço</p>
+                    </div>
+                    <p style="color: #989797;">Av. de Mocambique, parcela 7188 | <br>
+                        +258 85 248 0000 | <br>
+                        +258 87 248 0000
+                    </p>
+                    <div style="margin: 10px 0">
+                        <i class="fa-solid fa-clock"></i>
+                        <p style="display: inline;">Jornada de trabalho</p>
+                    </div>
+                    <p style="color: #989797;">Dias da semana: 07:00-17:00 <br>
+                        Sábado: Fechado <br>
+                        Domingo: Fechado</p>
+                </div>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/CMSaber/?locale=pt_BR" target="_blank"  rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@madossepro2665/featured" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" ></i></a>
+                <a href="https://www.instagram.com/colegiomsaber/?hl=en" target="_blank"  rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const navContainer = document.querySelector('.navContainer')
+        function menu() {
+            navContainer.style.transform = "translateX(-300px)"
+        }
+
+        function menuclose() {
+            navContainer.style.transform = "translateX(0)"
+        }
+
+        const button = document.querySelector('.button')
+        const dropmenus = document.querySelector('.dropmenus')
+        function show() {
+            if(dropmenus.style.display == "none") {
+                dropmenus.style.display = "block"
+                button.style.transform = "rotate(180deg)"
+            }
+            else {
+                dropmenus.style.display = "none"
+                button.style.transform = "rotate(0deg)"
+            }
+
+        }
+
+    </script>
+</body>
+</html>

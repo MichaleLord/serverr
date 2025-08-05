@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio + Saber</title>
+    <link rel="stylesheet" href="saber.css">
+    <link rel="icon" href="assets/logo.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="assets/logonobg.png">
+            <h1 style="color: black;text-align: center">Colégio + Saber</h1>
+            <div class="bar">
+                <div class="search">
+                    <input type="name" placeholder="Pesquisar...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <ul>
+                    <li><a href="/">Colégio</a></li>
+                    <li>
+                        <a href="#">Sobre <span class="icon1" style="font-size: 15px;">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="/inscricao">inscrição</a></li>
+                            <li><a href="/valores">valores</a></li>
+                            <li><a href="/taxas">taxas</a></li>
+                            <li><a href="/equipe">equipe</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="/ensino">Prospota Pedagogia <span style="font-size: 15px;">▼</span></a>
+                        <ul class="dropdown">
+
+                            <li class="li">
+                                <a href="/primario">Ensino Primário <div class="icon2" style="font-size: 15px;">▼</div></a>
+                                <ul class="drop1">
+                                    <li><a>1º Ciclo</a></li>
+                                    <li><a>2° Ciclo</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="li">
+                                <a href="/secundario">Ensino Secundário <div class="icon2" style="font-size: 15px;">▼</div></a>
+                                <ul class="drop2">
+                                    <li><a>1º Ciclo</a></li>
+                                    <li><a>2° Ciclo</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    
+                    <li><a href="/contacto">Contato </a></li>
+                    
+                    <li>
+                        <a href="#">Comunidade Escolar <span style="font-size: 15px;">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="/uniforme">Uniforme escolar</a></li>
+                            <li><a href="/material">Material Escolar</a></li>
+                            <li><a href="/actividades">Fichas de atividades</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu">
+                <button onclick="menu()" id="menuButton" style="color: black"><i class="fa-solid fa-bars"></i></button>
+                <div class="navContainer">
+                    <button onclick="menuclose()"><i class="fa-solid fa-xmark"></i></button>
+                    <div style="display: flex; align-items:center;justify-content: center">
+                        <ul id="navMenu">
+                            <img src="assets/logonobg.png">
+                            <li id="li1"><a href="/">Colégio</a></li>
+
+                            <li>
+                                <a href="#">Sobre <span class="icon1" style="font-size: 15px;">▼</span></a>
+                                <ul class="dropmenu">
+                                    <li class="item"><a href="/inscricao">inscrição</a></li>
+                                    <li class="item"><a href="/valores">valores</a></li>
+                                    <li class="item"><a href="/taxas">taxas</a></li>
+                                    <li class="item"><a href="/equipe">equipe</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="/ensino">Prospota Pedagogia</a>
+                                <button style="font-size: 15px;display: inline;transition: transform 0.3s ease-in-out" class="button" onclick="show()">▼</button>
+                                <ul class="dropmenus" style="display: none;">
+
+                                    <li class="lo">
+                                        <a href="/primario">Ensino Primário <div class="icon2" style="font-size: 15px;">▼</div></a>
+                                        <ul class="drop3">
+                                            <li><a>1° ciclo</a></li>
+                                            <li><a>2° ciclo</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="lo">
+                                        <a href="/secundario">Ensino Secundário <div class="icon2" style="font-size: 15px;">▼</div></a>
+                                        <ul class="drop3">
+                                            <li><a>1° ciclo</a></li>
+                                            <li><a>2° ciclo</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="/contacto">Contacto</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Comunidade Escolar <span style="font-size: 15px;">▼</span></a>
+                                <ul class="dropmenu">
+                                    <li><a href="/uniforme">Uniforme escolar</a></li>
+                                    <li><a href="/material">Material Escolar</a></li>
+                                    <li><a href="/actividades">Fichas de atividades</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="slider">
+            <div class="slide">
+                <img class="image" src="https://placehold.co/600x400"> 
+                <img class="image" src="https://placehold.co/600x400">
+                <img class="image" src="https://placehold.co/600x400">
+            </div>
+        </div>
+
+
+        <div class="aprender">
+            <h1 style="color: #3c3c37;font-size: 60px;text-align: center">Aprender é no +saber</h1>
+            <blockquote style="font-size: 23px;width: 70%;text-align: center">
+                Nós somos referência em excelência escolar em Maputo.
+                O +Saber é uma escola cujo principal objetivo é garantir
+                o bom aproveitamento e aprendizado do seu filho, para que
+                ele se desenvolva como um adulto responsável e 
+                financeiramente estável.
+                Nós investimos no futuro do seu filho.
+            </blockquote>
+            <h1 style="color: #3c3c37;font-size: 60px;text-align: center;margin-top: 100px">Planos</h1>
+            <blockquote style="font-size: 23px;width: 70%;text-align: center">
+                Nós queremos transformar o sistema educacional tradicional.
+                Nosso objetivo é tirar o foco de práticas como avaliações
+                padronizadas — que
+                muitas vezes são vazias e sem propósito.
+                Seu filho não deve estudar apenas para conseguir um emprego
+                ou para agradar os encarregados de educação.
+                Agora, ele vai aprender com o foco em desenvolver pensamento
+                crítico e se tornar exatamente o que o mercado de 
+                trabalho procura.
+                Chega de correr atrás. É hora de ser procurado.<br><br>
+
+                Vamos apoiar a área de interesse que o seu filho escolher desde 
+                o ensino primário.
+                Ele será incentivado a seguir essa vocação ao longo 
+                da sua formação.
+                O aluno poderá focar-se naquilo que realmente gosta desde 
+                a infância.
+                Se a criança mudar de interesse ou descobrir uma nova paixão, terá 
+                tempo e liberdade para explorar outras áreas.
+                Ela poderá ter disciplinas variadas, focar-se em múltiplas 
+                áreas e mudar de caminho a qualquer momento — sem o 
+                risco de ficar para trás.
+                Diferente do sistema educacional tradicional, onde mudar 
+                de curso significa recomeçar do zero, com apenas 
+                quatro anos de faculdade pela frente, 
+                dificultando imensamente o processo.
+            </blockquote>
+        </div>
+
+        <div class="school">
+
+            <div class="card">
+                <div class="images">
+                    <img src="https://placehold.co/200x400">
+                </div>
+                <div class="texts">
+                    <p>Para ingressar no Colégio + Saber, 
+                        é necessário que se faça um teste...
+                    </p>
+                    <a href="#">View details</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="https://placehold.co/200x400">
+                </div>
+                <div class="texts">
+                    <p>Objectivo
+                        Através da nossa acção pedagógica,
+                        pretendemos que os nossos alunos...</p>
+                        <a href="#">View details</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="https://placehold.co/200x400">
+                </div>
+                <div class="texts">
+                    <p>
+                        A qualidade acolhedora da nossa escola contribui para uma 
+                        experiência relaxante
+                        ...
+                    </p>
+                    <a href="#">View details</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="https://placehold.co/200x400">
+                </div>
+                <div class="texts">
+                    <p>
+                        Nossas atividades em sala de aula interna 
+                        são colocadas em prateleiras...
+                    </p>
+                    <a href="#">View details</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="/contacto" class="contacts"><button class="contact">Contacte-nos</button></a>
+
+        <div class="whatsapp">
+            <a href="https://chat.whatsapp.com/IXpklUtFEQ5GrEIWsnBxif" target="_blank">
+                <button>
+                    <img src="assets/whatsapp.png">
+                </button>
+            </a>
+            <p>Whatsapp</p>
+        </div>
+
+        
+        <div class="bottom">
+            <div class="top-container">
+                <img src="assets/csaber.png" width="300px">
+            </div>
+            <p style="color: white">______________________________________________________________________________________</p>
+            <div class="bcontainer">
+                <div class="text">
+                    <h3>Sobre</h3>
+                    <p>O Colégio + saber é <br>
+                        uma escola localizada no <br>
+                        bairo do zimpeto onde nós <br>
+                        temos como principal <br>
+                        <br>
+                        objectivo o desenvolvimento <br>
+                        e aprendizado do seu filho <br>
+                        para que possam se <br>
+                        formar em adultos capacitados
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>Matrículas</h3>
+                    <p>Matriculas abertas a partir de:<br>
+                        <br>
+                        <b>20 de novembro</b> <br>
+                        <br>
+                        até<br>
+                        <br>
+                        <b>30 de janeiro</b>
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>Contacte-nos</h3>
+                    <div style="margin-bottom: 10px">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p style="display: inline;">Nosso endereço</p>
+                    </div>
+                    <p style="color: #989797;">Av. de Mocambique, parcela 7188 | <br>
+                        +258 85 248 0000 | <br>
+                        +258 87 248 0000
+                    </p>
+                    <div style="margin: 10px 0">
+                        <i class="fa-solid fa-clock"></i>
+                        <p style="display: inline;">Jornada de trabalho</p>
+                    </div>
+                    <p style="color: #989797;">Dias da semana: 07:00-17:00 <br>
+                        Sábado: Fechado <br>
+                        Domingo: Fechado</p>
+                </div>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/CMSaber/?locale=pt_BR" target="_blank"  rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@madossepro2665/featured" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" ></i></a>
+                <a href="https://www.instagram.com/colegiomsaber/?hl=en" target="_blank"  rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slide = document.querySelector('.slide')
+        const image = document.querySelectorAll('.image').length
+        let index = 0
+
+        setInterval(() => {
+            index = (index + 1) % image
+            slide.style.transform = `translateX(-${index * 100}%)`
+        }, 3000)
+
+        const navContainer = document.querySelector('.navContainer')
+        function menu() {
+            navContainer.style.transform = "translateX(-300px)"
+        }
+
+        function menuclose() {
+            navContainer.style.transform = "translateX(0)"
+        }
+
+        const button = document.querySelector('.button')
+        const dropmenus = document.querySelector('.dropmenus')
+        function show() {
+            if(dropmenus.style.display == "none") {
+                dropmenus.style.display = "block"
+                button.style.transform = "rotate(180deg)"
+            }
+            else {
+                dropmenus.style.display = "none"
+                button.style.transform = "rotate(0deg)"
+            }
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniforme Escolar</title>
+    <link rel="stylesheet" href="uniforme.css">
+    <link rel="icon" href="assets/logo.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <img src="assets/logonobg.png">
+            <h1 style="color: black;text-align: center">Colégio + Saber</h1>
+            <div class="bar">
+                <div class="search">
+                    <input type="name" placeholder="Pesquisar...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <ul>
+                    <li><a href="/">Colégio</a></li>
+                    <li>
+                        <a href="#">Sobre <span class="icon1" style="font-size: 15px;">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="/inscricao">inscrição</a></li>
+                            <li><a href="/valores">valores</a></li>
+                            <li><a href="/taxas">taxas</a></li>
+                            <li><a href="/equipe">equipe</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="/ensino">Prospota Pedagogia <span style="font-size: 15px;">▼</span></a>
+                        <ul class="dropdown">
+
+                            <li class="li">
+                                <a href="/primario">Ensino Primário <div class="icon2" style="font-size: 15px;">▼</div></a>
+                                <ul class="drop1">
+                                    <li><a>1º Ciclo</a></li>
+                                    <li><a>2° Ciclo</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="li">
+                                <a href="/secundario">Ensino Secundário <div class="icon2" style="font-size: 15px;">▼</div></a>
+                                <ul class="drop2">
+                                    <li><a>1º Ciclo</a></li>
+                                    <li><a>2° Ciclo</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    
+                    <li><a href="/contacto">Contato </a></li>
+                    
+                    <li>
+                        <a href="#">Comunidade Escolar <span style="font-size: 15px;">▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="/uniforme">Uniforme escolar</a></li>
+                            <li><a href="/material">Material Escolar</a></li>
+                            <li><a href="/actividades">Fichas de atividades</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu">
+                <button onclick="menu()" id="menuButton" style="color: black"><i class="fa-solid fa-bars"></i></button>
+                <div class="navContainer">
+                    <button onclick="menuclose()"><i class="fa-solid fa-xmark"></i></button>
+                    <div style="display: flex; align-items:center;justify-content: center">
+                        <ul id="navMenu">
+                            <img src="assets/logonobg.png">
+                            <li id="li1"><a href="/">Colégio</a></li>
+
+                            <li>
+                                <a href="#">Sobre <span class="icon1" style="font-size: 15px;">▼</span></a>
+                                <ul class="dropmenu">
+                                    <li class="item"><a href="/inscricao">inscrição</a></li>
+                                    <li class="item"><a href="/valores">valores</a></li>
+                                    <li class="item"><a href="/taxas">taxas</a></li>
+                                    <li class="item"><a href="/equipe">equipe</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="/ensino">Prospota Pedagogia</a>
+                                <button style="font-size: 15px;display: inline;transition: transform 0.3s ease-in-out" class="button" onclick="show()">▼</button>
+                                <ul class="dropmenus" style="display: none;">
+
+                                    <li class="lo">
+                                        <a href="/primario">Ensino Primário <div class="icon2" style="font-size: 15px;">▼</div></a>
+                                        <ul class="drop3">
+                                            <li><a>1° ciclo</a></li>
+                                            <li><a>2° ciclo</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="lo">
+                                        <a href="/secundario">Ensino Secundário <div class="icon2" style="font-size: 15px;">▼</div></a>
+                                        <ul class="drop3">
+                                            <li><a>1° ciclo</a></li>
+                                            <li><a>2° ciclo</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="/contacto">Contacto</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Comunidade Escolar <span style="font-size: 15px;">▼</span></a>
+                                <ul class="dropmenu">
+                                    <li><a href="/uniforme">Uniforme escolar</a></li>
+                                    <li><a href="/material">Material Escolar</a></li>
+                                    <li><a href="/actividades">Fichas de atividades</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div style="background-color: #e6e7eb;padding: 50px 0;">
+            <h1 style="color: #989797;margin-left: 30px">Uniforme Escolar</h1>
+        </div>
+
+        <div class="main">
+
+            <h1 style="margin-top: 50px;">Nossa vestimenta</h1>
+
+            <div class="mains">
+                <div class="card_container2">
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://placehold.co/600x400" style="object-fit: cover;width: 100%;height: 100%">
+                        </div>
+                        <p>Calçao</p>
+                        <button>Procurar</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://placehold.co/600x400" style="object-fit: cover;width: 100%;height: 100%">
+                        </div>
+                        <p>Camisa P</p>
+                        <button>Procurar</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://placehold.co/600x400" style="object-fit: cover;width: 100%;height: 100%">
+                        </div>
+                        <p>Camisa S</p>
+                        <button>Procurar</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://placehold.co/600x400" style="object-fit: cover;width: 100%;height: 100%">
+                        </div>
+                        <p>Calça</p>
+                        <button>Procurar</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://placehold.co/600x400" style="object-fit: cover;width: 100%;height: 100%">
+                        </div>
+                        <p>C2.Fato de treino</p>
+                        <button>Procurar</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="https://placehold.co/600x400" style="object-fit: cover;width: 100%;height: 100%">
+                        </div>
+                        <p>C.Fato de Treino</p>
+                        <button>Procurar</button>
+                    </div>
+
+                </div>
+
+                <button class="arrow" onclick="swap2()" style="margin-right: 50px;">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+                <div class="ccontainer">
+                    <div class="card_container">
+
+                        <div class="card1">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="https://placehold.co/600x400" style="object-fit: cover;width: 100%;height: 100%">
+                                </div>
+                                <p>Calçao</p>
+                                <button>Procurar</button>
+                            </div>
+
+                            <div class="card">
+                                <div class="image">
+                                    <img src="https://placehold.co/600x400" style="object-fit: cover;width: 100%;height: 100%">
+                                </div>
+                                <p>Camisa P</p>
+                                <button>Procurar</button>
+                            </div>
+
+                            <div class="card">
+                                <div class="image">
+                                    <img src="https://placehold.co/600x400" style="object-fit: cover;width: 100%;height: 100%">
+                                </div>
+                                <p>Camisa S</p>
+                                <button>Procurar</button>
+                            </div>
+                        </div>
+
+                        <div class="card2">
+                            <div class="card">
+                                <div class="image">
+                                    <img src="https://placehold.co/600x400" style="object-fit: cover;width: 100%;height: 100%">
+                                </div>
+                                <p>Calça</p>
+                                <button>Procurar</button>
+                            </div>
+
+                            <div class="card">
+                                <div class="image">
+                                    <img src="https://placehold.co/600x400" style="object-fit: cover;width: 100%;height: 100%">
+                                </div>
+                                <p>C2.Fato de treino</p>
+                                <button>Procurar</button>
+                            </div>
+
+                            <div class="card">
+                                <div class="image">
+                                    <img src="https://placehold.co/600x400" style="object-fit: cover;width: 100%;height: 100%">
+                                </div>
+                                <p>C.Fato de Treino</p>
+                                <button>Procurar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="arrow" onclick="swap()">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+            <h1 style="font-family: monospace;font-size: 40px;text-align: center">Encontre locais próximos</h1>
+            <blockquote>
+                Sabemos como é importante que nossos alunos, pais e 
+                responsáveis tenham fácil acesso aos uniformes e peças 
+                de vestuário que representam com orgulho a nossa escola. 
+                Por isso, informamos que há pontos de venda próximos à nossa 
+                comunidade escolar onde é possível encontrar roupas 
+                oficiais com a identidade da escola.
+
+                Essas peças incluem camisetas, moletons, jaquetas, calças 
+                e outros itens personalizados com o nome, logotipo e as 
+                cores da nossa instituição. Tudo é produzido seguindo os 
+                padrões de qualidade e padronização exigidos pela escola, 
+                garantindo conforto, praticidade e um visual alinhado com 
+                o espírito da nossa comunidade.
+
+                Além de facilitar o dia a dia dos alunos, usar o uniforme 
+                escolar fortalece o sentimento de pertencimento e segurança 
+                dentro e fora do ambiente de ensino.
+
+                Atualmente, contamos com fornecedores autorizados localizados 
+                em pontos estratégicos da cidade, permitindo que as famílias 
+                encontrem as peças com mais comodidade e agilidade. Para saber 
+                quais são os locais disponíveis, basta acessar a seção 
+                <b>“Lojas Parceiras”</b> aqui no site ou entrar em contato 
+                diretamente com a nossa secretaria.
+
+                Estamos sempre atualizando as opções para garantir que todos 
+                tenham acesso às roupas escolares de forma prática, segura e 
+                acessível.
+            </blockquote>
+
+        </div>
+
+        <div class="whatsapp">
+            <a href="https://chat.whatsapp.com/IXpklUtFEQ5GrEIWsnBxif" target="_blank">
+                <button>
+                    <img src="assets/whatsapp.png">
+                </button>
+            </a>
+            <p>Whatsapp</p>
+        </div>
+
+        <div class="bottom">
+            <div class="top-container">
+                <img src="assets/csaber.png" width="300px">
+            </div>
+            <p style="color: white">______________________________________________________________________________________</p>
+            <div class="bcontainer">
+                <div class="text">
+                    <h3>Sobre</h3>
+                    <p>O Colégio + saber é <br>
+                        uma escola localizada no <br>
+                        bairo do zimpeto onde nós <br>
+                        temos como principal <br>
+                        <br>
+                        objectivo o desenvolvimento <br>
+                        e aprendizado do seu filho <br>
+                        para que possam se <br>
+                        formar em adultos capacitados
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>Matrículas</h3>
+                    <p>Matriculas abertas a partir de:<br>
+                        <br>
+                        <b>20 de novembro</b> <br>
+                        <br>
+                        até<br>
+                        <br>
+                        <b>30 de janeiro</b>
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>Contacte-nos</h3>
+                    <div style="margin-bottom: 10px">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p style="display: inline;">Nosso endereço</p>
+                    </div>
+                    <p style="color: #989797;">Av. de Mocambique, parcela 7188 | <br>
+                        +258 85 248 0000 | <br>
+                        +258 87 248 0000
+                    </p>
+                    <div style="margin: 10px 0">
+                        <i class="fa-solid fa-clock"></i>
+                        <p style="display: inline;">Jornada de trabalho</p>
+                    </div>
+                    <p style="color: #989797;">Dias da semana: 07:00-17:00 <br>
+                        Sábado: Fechado <br>
+                        Domingo: Fechado</p>
+                </div>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/CMSaber/?locale=pt_BR" target="_blank"  rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@madossepro2665/featured" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube" ></i></a>
+                <a href="https://www.instagram.com/colegiomsaber/?hl=en" target="_blank"  rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const navContainer = document.querySelector('.navContainer')
+        function menu() {
+            navContainer.style.transform = "translateX(-300px)"
+        }
+
+        function menuclose() {
+            navContainer.style.transform = "translateX(0)"
+        }
+
+        const card_container = document.querySelector('.card_container');
+        const arrow = document.querySelectorAll('.arrow');
+
+
+        function swap() {
+            card_container.style.transform = 'translateX(-1010px)';
+        }
+
+        function swap2() {
+            card_container.style.transform = 'translateX(0)';
+        }
+
+        const button = document.querySelector('.button')
+        const dropmenus = document.querySelector('.dropmenus')
+        function show() {
+            if(dropmenus.style.display == "none") {
+                dropmenus.style.display = "block"
+                button.style.transform = "rotate(180deg)"
+            }
+            else {
+                dropmenus.style.display = "none"
+                button.style.transform = "rotate(0deg)"
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>

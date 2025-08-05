@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio + Saber</title>
+    <link rel="stylesheet" href="saber.css">
+    <link rel="icon" href="assets/logo.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="assets/logonobg.png" style="width: 40px;">
+            <p style="color: white;">Colégio + Saber</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Adress</a></li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <div class="slide">
+                <img class="image" src="assets/saber5.jpg"> 
+                <img class="image" src="assets/saber1.jpg">
+                <img class="image" src="assets/saber3.jpg">
+            </div>
+            <div class="dots">
+                <span class="dot" data-slide='0'></span>
+                <span class="dot" data-slide='1'></span>
+                <span class="dot" data-slide='2'></span>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="lcontainer">
+                <button><i class="fa-solid fa-users"></i></button>
+                <label>Enscrever-se</label>
+            </div>
+            <div class="lcontainer">
+                <button style="background-color: lightblue;"><i class="fa-solid fa-clock"></i></button>
+                <label>Ensino</label>
+            </div>
+            <div class="lcontainer">
+                <button style="background-color: lightgreen;"><i class="fa-solid fa-desktop"></i></button>
+                <label>Local</label>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slide = document.querySelector('.slide')
+        const image = document.querySelectorAll('.image').length
+        const dot = document.querySelectorAll('.dot')
+        let index = 0
+
+        setInterval(() => {
+            index = (index + 1) % image
+            slide.style.transform = `translateX(-${index * 100}%)`
+        }, 3000)
+
+
+        function slides(newIndex) {
+            index = newIndex
+            slide.style.transform = `translateX(-${index * 100}%)`
+        }
+
+        dot.forEach(dot => {
+            dot.addEventListener('click', ()=> {
+                const cindex = parseInt(dot.getAttribute('data-slide'))
+                slides(cindex)
+            })
+        })
+        
+    </script>
+</body>
+</html>
